@@ -1,0 +1,90 @@
+.footer
+{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.footer-container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h4
+{
+    font-size: 12px;
+    letter-spacing: .15em;
+    margin-bottom: 20px;
+}
+
+.newsletter-form
+{
+    display: flex;
+    width: 280px;
+    border: 1px solid #555;
+}
+
+.newsletter-form input,
+.newsletter-form textarea
+{
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 12px;
+    outline: none;
+}
+
+.newsletter-form button
+{
+    width: 50px;
+    border: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+
+.footer-nav
+{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-nav a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-nav a:hover,
+.footer-nav a:active,
+.footer-nav a:hover:active
+{
+    color: white;
+}
+
+.contact
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact p
+{
+    color: white;
+    line-height: 1.8;
+}
+
+
+footer
+{
+    border-top: 1px solid var(--border);
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: var(--secondary);
+    text-align: center;
+}

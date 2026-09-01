@@ -1,0 +1,22 @@
+body
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 769px)
+{
+    body
+    {
+        background-image: url('');
+    }
+}
+
+@media (max-width: 768px)
+{
+    body
+    {
+        background-image: url('');
+    }
+}
