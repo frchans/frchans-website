@@ -1,4 +1,4 @@
-    <header>
+<header>
     <div class="nav">
         <button id="logo"
                 class="logo"
@@ -20,9 +20,11 @@
 
 <div class="popup-menu" id="popupMenu">
     <a href="https://frchans.github.io/">GitHub博客</a>
-    <a href="https://github.com/frchans">研究项目</a>
+<!--    <a href="https://github.com/">研究项目</a>-->
+    <a href="https://www.frchans.com/EasternGeek">东方极客</a>
     <a href="https://www.frchans.com/LunarFantasia">冴月ファンタジア茶館</a>
     <div class="menu-divider"></div>
     <a href="https://www.frchans.com/about">关于</a>
+    <a href="https://github.com/frchans/frchans-website">获取网页源代码</a>
     <a href="mailto:frchans@icloud.com?subject=FeedBack&body=">联系我们</a>
 </div>

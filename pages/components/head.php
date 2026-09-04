@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<body >
+<body>
 
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>FRChans Tech ++</title>
-    
+
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/body.css">
     <link rel="stylesheet" href="/css/header.css">
