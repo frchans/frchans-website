@@ -1,14 +1,21 @@
+<head>
+    <link rel="stylesheet" href="/css/homeBackgroundImage.css">
+</head>
+
 <main class="container">
     <section class="hero-section">
-        <p>求是，创新</p>
+        <p>Meet your future here.</p>
     </section>
 
     <section class="article-list">
-        <?php if (empty($articles)): ?>
-            <p class="no-articles">暂无发布的内容</p>
-        <?php else: ?>
+        <?php
+        if (empty($articles)): ?>
+            <p class="no-articles"></p>
+        <?php
+        else: ?>
             <div class="grid">
-                <?php foreach ($articles as $article): ?>
+                <?php
+                foreach ($articles as $article): ?>
                     <article class="article-card">
                         <h3>
                             <a href="/article/<?= htmlspecialchars($article['slug']) ?>">
@@ -18,8 +25,10 @@
                         <time><?= htmlspecialchars($article['date'] ?? '') ?></time>
                         <p><?= htmlspecialchars($article['summary'] ?? '暂无摘要') ?></p>
                     </article>
-                <?php endforeach; ?>
+                <?php
+                endforeach; ?>
             </div>
-        <?php endif; ?>
+        <?php
+        endif; ?>
     </section>
 </main>

@@ -66,7 +66,7 @@ $router->get('/', function ()
     });
 
     render('home.php', [
-        'pageTitle' => '首页 - FRChans Tech ++',
+        'pageTitle' => '首页 - EasternGeek',
         'articles' => $articles
     ]);
 });

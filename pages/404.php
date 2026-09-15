@@ -9,7 +9,7 @@
 </div> -->
 <body>
 <h1> 404 Not Found ! </h1>
-<p>您寻找的页面可能不存在或已被删除。如果您确信该页面应该出现在此处，请点击网页顶栏联系我们。</p><br>
+<p>您寻找的页面可能不存在或已被删除。如果您确信该页面应该出现在此处，请联系我们。</p><br>
 
 <iframe
         src="https://player.bilibili.com/player.html?isOutside=true&aid=182591&bvid=BV13x411w7Kb&cid=298583&p=1&autoplay=0"

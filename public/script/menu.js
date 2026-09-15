@@ -30,7 +30,7 @@ menu.addEventListener("click", function (e) {
 const closeMenuBtn = document.querySelector('.closeMenu');
 
 if (closeMenuBtn && menu) {
-    const handleClose = function(e) {
+    const handleClose = function (e) {
         // 同时重置菜单和按钮状态
         menu.classList.remove('show');
         button.classList.remove('is-active');
@@ -42,11 +42,11 @@ if (closeMenuBtn && menu) {
         });
     };
 
-    closeMenuBtn.addEventListener('touchstart', function(e) {
+    closeMenuBtn.addEventListener('touchstart', function (e) {
         handleClose(e);
-    }, { passive: true });
+    }, {passive: true});
 
-    closeMenuBtn.addEventListener('click', function(e) {
+    closeMenuBtn.addEventListener('click', function (e) {
         e.preventDefault();
         handleClose(e);
     });

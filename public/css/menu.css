@@ -1,13 +1,11 @@
-.top-menu
-{
+.top-menu {
     position: fixed;
     top: 28px;
     right: 30px;
     z-index: 10000;
 }
 
-.menu-button
-{
+.menu-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,8 +28,7 @@
 }
 
 .icon-menuClosed,
-.icon-menuOpened
-{
+.icon-menuOpened {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -42,21 +39,18 @@
     transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.icon-menuClosed
-{
+.icon-menuClosed {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
 
-.icon-menuOpened
-{
+.icon-menuOpened {
     opacity: 0;
     font-size: 36px;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.popup-menu
-{
+.popup-menu {
     position: fixed;
     top: 60px;
     left: 0;
@@ -86,8 +80,7 @@
     -webkit-backdrop-filter 0.5s ease;
 }
 
-.popup-menu.show
-{
+.popup-menu.show {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,8 +94,7 @@
 }
 
 .popup-menu a,
-.menu-item
-{
+.menu-item {
     text-align: center;
     display: block;
     width: 100%;
@@ -117,28 +109,24 @@
 }
 
 .popup-menu a:hover,
-.menu-item:hover
-{
+.menu-item:hover {
     background: rgba(255, 255, 255, 0.1);
     color: white !important;
 }
 
 
-.menu-divider
-{
+.menu-divider {
     height: 1px;
     background: rgba(255, 255, 255, 0.1);
     margin: 0 40px;
 }
 
 
-.has-submenu
-{
+.has-submenu {
     position: relative;
 }
 
-.submenu
-{
+.submenu {
     display: none;
     position: absolute;
     top: 100%;
@@ -150,23 +138,20 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
 }
 
-.has-submenu:hover .submenu
-{
+.has-submenu:hover .submenu {
     display: block;
 }
 
 /* --- 状态切换动画 (当按钮包含 .is-active 时触发) --- */
 
 /* 1. 汉堡线隐藏并缩小 */
-.menu-button.is-active .icon-menuClosed
-{
+.menu-button.is-active .icon-menuClosed {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.6);
 }
 
 /* 2. 叉号转回 0 度并显示 */
-.menu-button.is-active .icon-menuOpened
-{
+.menu-button.is-active .icon-menuOpened {
     opacity: 1;
     transform: translate(-50%, -50%) rotate(0deg);
 }
