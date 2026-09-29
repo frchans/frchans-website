@@ -1,12 +1,14 @@
-body {
+/*body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+    background-image: url('../img/bg-img.webp');
+}*/
 
+/*
 @media (min-width: 769px) {
     body {
-        background-image: url('');
+        background-image: url('../img/bg-img.webp');
     }
 }
 
@@ -14,4 +16,65 @@ body {
     body {
         background-image: url('');
     }
+}*/
+
+/*
+.card {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    padding: 0;
+    color: #ffffff;
+    overflow: hidden;
+
+    isolation: isolate;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../img/bg-img.webp");
+    background-size: cover;
+    background-position: center;
+
+    filter:brightness(0.5);
+
+    z-index: -1;
+}
+*/
+
+/* 设置 body 的定位与层叠上下文 */
+body {
+    position: relative;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+/* 使用伪元素挂载背景图，并通过 filter 控制亮度，通过 animation 实现渐变切换 */
+body::before {
+    background-image: url("../img/bg-img.webp");
+
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* 确保背景在所有内容下方 */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    /* 降低背景图片亮度（0.5 表示 50% 亮度，可按需微调，如 0.4 或 0.6） */
+    filter: brightness(0.5);
+
+    /* 绑定多图渐变切换动画：共 24 秒循环，匀速切换 */
+    animation: bgSlideshow 24s infinite ease-in-out;
 }
