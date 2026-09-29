@@ -1,0 +1,30 @@
+<header>
+    <div class="nav">
+        <button id="logo"
+                class="logo"
+                onclick="window.location.href='https://www.frchans.com/'">
+            冴月ファンタジア茶館
+        </button>
+    </div>
+</header>
+
+<div class="nav-right">
+</div>
+
+<div class="top-menu">
+    <button class="menu-button" id="menuButton">
+        <span class="icon-menuClosed">☰</span>
+        <span class="icon-menuOpened">×</span>
+    </button>
+</div>
+
+<div class="popup-menu" id="popupMenu">
+    <a href="https://frchans.github.io/">GitHub博客</a>
+    <!--    <a href="https://github.com/">科研项目与研究成果</a>-->
+    <a href="https://www.frchans.com/EasternGeek">东方极客 Eastern Geek</a>
+    <a href="https://www.frchans.com/">FRChans Tech Studio</a>
+    <!--    <a href="https://www.lifecon.net">LIFECON Minecraft多人游戏</a>-->
+    <div class="menu-divider"></div>
+    <a href="https://www.frchans.com/about">关于</a>
+    <a href="mailto:frchans@icloud.com?subject=FeedBack&body=">联系我们</a>
+</div>

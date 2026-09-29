@@ -1,0 +1,18 @@
+.shade, .shade a, a .shade, .shade a.new {
+    background-color: black;
+    color: black;
+}
+
+.shade:hover, .shade:active, .shade:hover .shade, .shade.active .shade {
+    color: white !important;
+}
+
+.shade:hover a, a:hover .shade, .shade:active a, a:active .shade {
+    color: white !important;
+}
+
+.shade:hover .new, .shade .new:hover, .new:hover .shade, .shade:active .new, .shade .new:active, .new:active .shade {
+    color: #BA0000 !important;
+}
+
+/*此方法引用自Moegirl*/

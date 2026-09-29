@@ -8,22 +8,18 @@ $adminPassword = $config["admin"]["password"];
 
 $errorMessage = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST")
-{
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    if ($username == $adminUsername && $password == $adminPassword)
-    {
+    if ($username == $adminUsername && $password == $adminPassword) {
         $_SESSION["is_admin"] = true;
         $_SESSION["adminUsername"] = $adminUsername;
 
         header("Location: dashboard.php");
 
         exit("一些地方发生了错误");
-    }
-    else
-    {
+    } else {
         $errorMessage = "账户名或密码有误";
     }
 }

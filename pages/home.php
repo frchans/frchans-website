@@ -42,12 +42,7 @@
             <?php
             endforeach; ?>
         </div>
-
-        <p>该图片由<a
-                    href="https://pixabay.com/zh/users/terski-5330276/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=10473930">Ted
-                Erski</a>在<a
-                    href="https://pixabay.com/zh//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=10473930">Pixabay</a>上发布
-        </p>
+    
     <?php
     endif; ?>
 </section>

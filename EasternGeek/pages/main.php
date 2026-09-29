@@ -12,12 +12,9 @@ require_once __DIR__ . '/components/header.php'; ?>
 
     <main class="container">
         <?php
-        if (isset($viewPath) && file_exists($viewPath))
-        {
+        if (isset($viewPath) && file_exists($viewPath)) {
             require $viewPath;
-        }
-        else
-        {
+        } else {
             require __DIR__ . '/404.php';
         }
         ?>
